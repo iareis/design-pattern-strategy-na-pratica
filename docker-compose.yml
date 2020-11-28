@@ -1,9 +1,10 @@
-version: '3.3'
+version: "3.3"
 
-services: 
+services:
     php:
         build: .
-        ports: 
+        container_name: design_strategy_php
+        ports:
             - 8080:80
-        volumes: 
+        volumes:
             - ./src:/var/www/html/
